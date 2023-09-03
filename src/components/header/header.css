@@ -1,0 +1,76 @@
+header{
+    height:100vh;
+    padding-top: 7rem;
+    overflow: hidden;
+}
+.header__container{
+    height: 100%;
+    position: relative;
+    text-align: center;
+}
+/* ----------------CTA------------------ */
+.cta{
+    margin-top: 2.5rem;
+    display: flex;
+    gap: 1.2rem;
+    justify-content: center;
+}
+/* ---------------------HeaderSocials ------------------*/
+.header__socials{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.8rem;
+    position: absolute;
+    left: 0rem;
+    bottom:3rem;
+}
+.header__socials::after{
+    content: '';
+    height: 2rem;
+    width: 1px;
+    background: var(--color-primary);
+}
+/* -------------------me------------------- */
+.me{
+    width: 20rem;
+    /* height: 5rem; */
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    /* margin-top: 5%; */
+    padding: 30px;
+    overflow: hidden;
+    border-radius: 50%;
+
+}
+/* -------------------scroll down------------- */
+.scroll__down{
+    position: absolute;
+    right: -2.3rem;
+    bottom: 5rem;
+    transform: rotate(90deg);
+    font-weight: 300;
+    font-size: 0.9rem;
+}
+
+/* ---------------------------------RESPONSIVENESS-------------------------------------- */
+    /* -------------------medium devices--------------- */
+    @media screen and (max-width: 1024px) {
+        header{
+            height: 100vh;
+
+        }
+    }
+/* -------------------small devices--------------- */
+@media screen and (max-width: 600px) {
+    header{
+        height: 100vh;
+    }
+     /* .header__socials , .scroll__down{
+         display: none; 
+    }  */
+}
+
+
+
